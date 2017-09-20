@@ -3,13 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="index.css">
   </head>
   <body>
-    <div class="" style="position:relative; width:100%;">
-      <span><p class="txt-big-number txt-gray" id="g-range-value"></p><span id="arrow"></span></span>
-      <input class="g-range" type="range" id="g-range" min="1" max="5"  onchange="showRangeValue(this.value)" oninput="showRangeValue(this.value)">
+    <!--div class="container-range" id="filtro"></div-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="container-range" id="filtro">
+            <span><p class="txt-big-number txt-gray" id="g-range-value"></p><span id="arrow"></span></span>
+            <input class="g-range" type="range" id="g-range" min="1" max="5"  onchange="showRangeValue(this)" oninput="showRangeValue(this)">
+          </div>
+
+          <div id="result"></div>
+        </div>
+      </div>
     </div>
+
+    <script src="collections_tarjetas.js"></script>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
